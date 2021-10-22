@@ -1,0 +1,369 @@
+<html>
+    <head>
+        <link rel="shortcut icon" type="image/x-36" href="img/icons/favcon.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Spectral&display=swap" rel="stylesheet">
+        <title>Petshop Da Belinha</title>
+    </head>
+    <body>
+        <!-- Tabela Cabeçalho -->	
+      <table width="100%">
+        <tr>
+          <a name="logo"> 
+          <th rowspan="4">
+          <!-- Imagem Logo -->            
+            <a href="index.html">
+              <img src="img/icons/logo.png" alt="imagem logo" width="85%" height="380px"/>
+            </a>
+          </th>
+          </a>
+          <!-- Tabela Menu-->
+          <th>
+            <table cellpadding="20" width="90%" height="190px">
+              <tr>
+                <th bgcolor="#EB3D71">
+                  <a href="index.html">
+                    <font color="#fff" face="Spectral, serif" size="5">
+                      <b>Inicio</b>
+                    </font>
+                  </a> 
+                </th>
+                <th bgcolor="#EB3D71">
+                  <a href="produtos.html">
+                    <font color="#fff" face="Spectral, serif" size="5">
+                      <b>Produtos</b>
+                    </font>
+                  </a> 
+                </th>
+                <th bgcolor="#EB3D71">
+                  <a href="servicos.html">													
+                    <font color="#fff" face="Spectral, serif" size="5">									
+                      <b>Serviços</b>
+                    </font>
+                  </a>
+                </th>
+              </tr>
+              <tr bgcolor="#EB3D71">
+                <th>
+                  <a href="sobre.html" target="ifcontent">
+                    <a href="sobre.html">
+                      <font color="#fff" face="Spectral, serif" size="5">
+                        <b>Sobre a Empresa</b>
+                      </font>
+                    </a>
+                  </a>
+                </th>
+                <th bgcolor="#EB3D71">
+                  <a href="contado.html">
+                    <font color="#fff" face="Spectral, serif" size="5">
+                      <b>Contado</b>
+                    </font>
+                  </a>
+                </th>
+                <th bgcolor="#3D4547">
+                  <a href="cadastro.html">
+                    <font color="#F7CE9B" face="Spectral, serif" size="5">
+                      <b>Cadastro</b>
+                    </font>
+                  </a>
+                </th>
+              </tr>
+            </table>
+          </th>
+        </tr>
+      </table>
+      <hr color="tomato" width="76%" align="center"/>
+      <br/>
+
+      <!--Tabela Menu Cadastro-->
+      <table bgcolor="#333" width="65%" align="center" cellpadding="20" bordercolor="#000">
+        <tr>
+          <th bgcolor="EB3D71">
+            <a href="cadastro_pet.html">
+              <font size="6" color="#fff" face="Spectral, serif">
+                Cadastrar Pet
+              </font>
+            </a>
+          </th>
+          <th bgcolor="#F7CE9B">
+            <a href="cadastro_cliente.html">
+              <font size="6" color="#333" face="Spectral, serif">
+                Cadastrar Conta
+              </font>
+            </a>
+          </th>
+        </tr>
+       </table>
+       <br>
+       <br>
+       <hr color="tomato" width="76%" align="center"/>
+       <br/>
+
+      <!--Tabela Cadastro Pet-->
+      <form action="" enctype="multipart/form-data" method="GET">
+        <table cellpadding="20px" bgcolor="#000" width="45%" align="center">
+          <tr>
+            <th> 
+              <font color="#EB3D71" size="6" face="Spectral, serif">
+                Cadastrar Pet na sua conta
+              </font>
+            </th>
+          </tr>
+          <tr>
+            <th bgcolor="#F7CE9B">
+              <fieldset>
+                <legend>
+                 <font size="5" face="Spectral, serif">
+                  Dados do seu pet
+                  </font>
+                </legend>
+                <table cellpadding="15px" rules="rows" bgcolor="#EB3D71" width="100%" bordercolor="#000">
+                  <tr>
+                    <th>
+                      <label>
+                        <font size="5">Usuario:</font>
+                      </label>
+                      <input type="email" required placeholder="Email de usuario">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>
+                      <label>
+                        <font size="5">Senha: </font>
+                      </label>
+                      <input type="password" required placeholder="Senha de usuario" minlength="4" maxlength="12">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>
+                      <label for="nomePet">
+                        <font size="5">
+                          Qual o nome do seu Pet?
+                        </font>
+                      </label><br/>
+                      <br/>
+                      <input type="text" name="nomePet" id="nomePet" required placeholder="Nome do seu Pet aqui" maxlength="45">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>
+                      <label for="tipoPet">
+                        <font size="5">
+                          Qual o tipo do seu Pet?
+                        </font>
+                      </label><br><br/>
+                      <input type="radio" id="tipo_pet1" name="tipoPet" value="cachorro">
+                      <label for="tipo_pet1">Cachorro&#128054;</label>&nbsp;
+                      <input type="radio" id="tipo_pet2" name="tipoPet" value="gato">
+                      <label for="tipo_pet2">Gato&#128570;</label>
+                      <input type="radio" id="tipo_pet3" name="tipoPet" value="peixe">
+                      <label for="tipo_pet3">Peixe&#x1F41F;
+                      </label>
+                      <input type="radio" id="tipo_pet4" name="tipoPet" value="ave">
+                      <label for="tipo_pet4">Ave&#x1F99C;</label>&nbsp;
+                      <input type="radio" id="tipo_pet5" name="tipoPet" value="outro">
+                      <label for="tipo_pet5">Outro</label>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>
+                      <label>
+                        <font size="5">
+                          Qual seria a idade do teu Pet?
+                        </font>
+                      </label><br/><br/>
+                      <input type="text" name="idadePet" id="idadePet" required>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>
+                      <label for="lista_raca">
+                        <font size="5">
+                          Qual a raça?
+                        </font>
+                      </label>
+                      <br>
+                      <br>
+                      <select name="lista_raca" size="10">
+                        <optgroup label="A">
+                          <option value="raca-A1">
+                            Abissínio
+                          </option>
+                          <option value="raca-A2">
+                            Akita Inu
+                          </option>
+                          <option value="raca-A3">
+                            Angorá Turco
+                          </option>
+                          <option value="raca-A4">
+                            Akbash
+                          </option>
+                          <option value="raca-A5">              
+                            American Bully
+                          </option>
+                        </optgroup>
+                        <optgroup label="B">
+                          <option value="raca-B1">
+                            Barbet
+                          </option>
+                          <option value="raca-B2">
+                            Bulldog Francês
+                          </option>
+                          <option value="raca-B3">
+                            Bullmastiff
+                          </option>
+                          <option value="raca-B4">
+                            Buldogue inglês
+                          </option>
+                          <option value="raca-B5">              
+                            Billy
+                          </option>
+                        </optgroup>
+                        <optgroup label="B">
+                          <option value="raca-B1">
+                            Barbet
+                          </option>
+                          <option value="raca-B2">
+                            Bulldog Francês
+                          </option>
+                          <option value="raca-B3">
+                            Bullmastiff
+                          </option>
+                          <option value="raca-B4">
+                            Buldogue inglês
+                          </option>
+                          <option value="raca-B5">              
+                            Billy
+                          </option>
+                        </optgroup>
+                        <optgroup label="C">
+                          <option value="raca-C1">
+                            Cesky Terrier
+                          </option>
+                          <option value="raca-C2">              
+                            Chihuahua
+                          </option>
+                          <option value="raca-C3">
+                            Cão de Canãa
+                          </option>
+                          <option value="raca-C4">
+                            Clumber
+                          </option>
+                          <option value="raca-C5">              
+                            Collie
+                          </option>
+                        </optgroup>
+                        <optgroup label="D">
+                          <option value="raca-D1">
+                            Dachshund
+                          </option>
+                          <option value="raca-D2">
+                           Dogue Alemão
+                          </option>
+                          <option value="raca-D3">
+                            Dogue Brasileiro
+                          </option>
+                          <option value="raca-D4">
+                            Doberman
+                          </option>
+                          <option value="raca-D5">              
+                            Dálmata
+                          </option>
+                        </optgroup>
+                        <optgroup label="E">
+                          <option value="raca-E1">
+                            Elkhound
+                          </option>
+                          <option value="raca-E2">
+                            Exótico ou Exotic Shorthair
+                          </option>
+                        </optgroup>
+                        <optgroup label="F">
+                          <option value="raca-F1">
+                            Fila Brasileiro
+                          </option>
+                          <option value="raca-F2">
+                            Flat Coated Retriever
+                          </option>
+                          <option value="raca-F3">
+                            Fox Terrier
+                          </option>
+                          <option value="raca-F4">
+                           Fox Terrier Pelo Liso
+                          </option>
+                          <option value="raca-F5">              
+                            Foxhound Inglês
+                          </option>
+                        </optgroup>
+                        <optgroup label="G">
+                          <option value="raca-G1">
+                            Golden Retriever
+                          </option>
+                          <option value="raca-G2">
+                            Greyhound
+                          </option>
+                          <option value="raca-G3">
+                            Gascão de Saintongeois
+                          </option>
+                          <option value="raca-G4">
+                            Griffon de Nivernais
+                          </option>
+                          <option value="raca-G5">              
+                            Galgo Escocês
+                          </option>
+                        </optgroup>
+                      </select>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>
+                      <input type="image" src="img/btn_cadastro.png" alt="">
+                    </th>
+                  </tr>
+                </table>              
+              </fieldset>
+            </th>    
+          </tr>
+        </table>
+      </form>      
+      <br/>
+      <br>
+      <hr color="#111">
+
+      <!-- Botão Para voltar ao topo -->
+      <a href="#logo">
+         <h3>
+            <font color="#3D4547" size="6">
+               <center>
+                  Voltar ao topo
+               </center>
+            </font>
+         </h3>
+      </a>
+      <br/>
+      <hr color="tomato" width="80%"/>
+
+      <!-- Tabela Rodape -->
+      <table cellpadding="10" align="center">
+         <tr>
+            <th>
+              <img src="img/img_cabecalho.png" width="90px">
+            </th>
+         </tr>
+         <tr>
+            <th>
+               <h4>
+                  Petshop da Belinha
+               </h4>
+            </th>
+         </tr>
+         <tr>
+            <th>
+               <h5>
+                &#169;Todos os direitos reservados a propriedaria <i>Isabel Oliveira</i>, 31 maio 2021
+               </h5>
+            </th>
+         </tr>
+      </table>
+    </body>
+</html>
