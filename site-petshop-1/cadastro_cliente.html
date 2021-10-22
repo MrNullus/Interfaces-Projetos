@@ -1,0 +1,256 @@
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-36" href="img/icons/favcon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Spectral&display=swap" rel="stylesheet"/>
+    <title>Petshop Da Belinha</title>
+  </head>
+  <body>
+    <!-- Tabela Cabeçalho -->
+    <table width="100%">
+      <tr>
+        <a name="logo">
+          <th rowspan="4">
+            <!-- Imagem Logo -->
+
+            <a href="index.html">
+              <img
+                src="img/icons/logo.png"
+                alt="imagem logo"
+                width="85%"
+                height="380px"
+              />
+            </a>
+          </th>
+        </a>
+        <!-- Tabela Menu-->
+        <th>
+          <table cellpadding="20" width="90%" height="190px">
+            <tr>
+              <th bgcolor="#EB3D71">
+                <a href="index.html">
+                  <font color="#fff" face="Spectral, serif" size="5">
+                    <b>Inicio</b>
+                  </font>
+                </a>
+              </th>
+              <th bgcolor="#EB3D71">
+                <a href="produtos.html">
+                  <font color="#fff" face="Spectral, serif" size="5">
+                    <b>Produtos</b>
+                  </font>
+                </a>
+              </th>
+              <th bgcolor="#EB3D71">
+                <a href="servicos.html">
+                  <font color="#fff" face="Spectral, serif" size="5">
+                    <b>Serviços</b>
+                  </font>
+                </a>
+              </th>
+            </tr>
+            <tr bgcolor="#EB3D71">
+              <th>
+                <a href="sobre.html" target="ifcontent">
+                  <a href="#frame-sobre">
+                    <font color="#fff" face="Spectral, serif" size="5">
+                      <b>Sobre a Empresa</b>
+                    </font>
+                  </a>
+                </a>
+              </th>
+              <th bgcolor="#EB3D71">
+                <a href="contado.html">
+                  <font color="#fff" face="Spectral, serif" size="5">
+                    <b>Contado</b>
+                  </font>
+                </a>
+              </th>
+              <th bgcolor="#3D4547">
+                <a href="cadastro.html">
+                  <font color="#F7CE9B" face="Spectral, serif" size="5">
+                    <b>Cadastro</b>
+                  </font>
+                </a>
+              </th>
+            </tr>
+          </table>
+        </th>
+      </tr>
+    </table>
+    <hr color="tomato" width="76%" align="center" />
+    <br />
+
+    <!--Tabela Menu Cadastro-->
+    <table bgcolor="#333" width="65%" align="center" cellpadding="20" bordercolor="#000">
+      <tr>
+        <th bgcolor="EB3D71">
+          <a href="cadastro_pet.html">
+            <font size="6" color="#fff" face="Spectral, serif">
+              Cadastrar Pet
+            </font>
+          </a>
+        </th>
+        <th bgcolor="#F7CE9B">
+          <a href="cadastro_cliente.html">
+            <font size="6" color="#333" face="Spectral, serif">
+              Cadastrar Conta
+            </font>
+          </a>
+        </th>
+      </tr>
+    </table>
+    <br />
+    <br />
+    <hr color="tomato" width="76%" align="center" />
+    <br />
+
+    <!-- Tabela Cadastro Cliente -->
+    <form action="" enctype="multipart/form-data" method="POST">
+      <table cellpadding="8px" bgcolor="#333" width="48%" align="center">
+        <tr>
+          <th>
+            <font color="#1A8CB4" size="6" face="Spectral,serif">
+              Cadastro do Cliente
+            </font>
+          </th>
+        </tr>
+        <tr>
+          <th bgcolor="#F7CE9B">
+            <fieldset>
+              <legend>
+                <font size="5" face="Spectral, serif">
+                  Seus dados para cadastro
+                </font>
+              </legend>
+              <table cellpadding="15px" rules="cols" bgcolor="#EB3D71" width="100%" bordercolor="#000">
+                <tr>
+                  <th>
+                    <label for="nome">
+                      <font size="4" face="arial"> Nome do Cliente* </font>
+                    </label>
+                  </th>
+                  <th bgcolor="#333">
+                    <input
+                      type="text"
+                      name="nome"
+                      id="nome_user"
+                      placeholder="Digite seu nome completo"
+                    />
+                  </th>
+                </tr>
+                <tr>
+                  <th>
+                    <label for="documento">
+                      <font size="4" face="arial"> CPF* </font>
+                    </label>
+                  </th>
+                  <th>
+                    <input  type="tel" name="documento"  placeholder="000.000.000-00" minlength="14" required maxlength="14"/>
+                  </th>
+                </tr>
+                <tr>
+                  <th>
+                    <label for="idade">
+                      <font size="4" face="arial"> Sua idade* </font>
+                    </label>
+                  </th>
+                  <th bgcolor="#333">
+                    <input type="date" name="idade" id="idade_user" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>
+                    <label for="fone">
+                      <font size="4" face="arial"> Celular* </font>
+                    </label>
+                  </th>
+                  <th>
+                    <input type="tel" name="fone" placeholder="(00)00000-0000" id="fone" minlength="14" maxlength="15" title="Seu celular   tem que ter 11 ou 12 digitos." required/>
+                  </th>
+                </tr>
+                <tr>
+                  <th>
+                    <label for="email">
+                      <font size="4" face="arial"> Seu melhor e-mail* </font>
+                    </label>
+                  </th>
+                  <th bgcolor="#333">
+                    <input type="email" required name="email" placeholder="Digite seu e-mail" id="mail-user"/>
+                  </th>
+                </tr>
+                <tr>
+                  <th>
+                    <label for="senha">
+                      <font size="4" face="arial"> Criar senha* </font>
+                    </label>
+                  </th>
+                  <th>
+                    <input type="password" name="senha" id="senha" placeholder="Entre 4 e 12 caracteres" maxlength="12" minlength="4"/>
+                  </th>
+                </tr>
+                <tr>
+                  <td colspan="2" bgcolor="#333">
+                    <label for="newslleter">
+                      <input id="newslleter" type="checkbox" name="newslleter" checked/>  
+                      <font color="#fff" face="Spectral, serif">
+                        <i>Quero receber ofertas, descontos e promoções exclussivas</i>
+                      </font>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <th colspan="2">
+                    <a href="#">
+                      <font face="arial" color="#333"> Já tenho conta </font>
+                    </a>
+                  </th>
+                </tr>
+                <tr>
+                  <th colspan="2">
+                    <input type="image" src="img/btn_cadastro.png" />
+                  </th>
+                </tr>
+              </table>
+            </fieldset>
+          </th>
+        </tr>
+      </table>
+    </form>
+    <br />
+    <br />
+    <hr color="#111" />
+
+    <!-- Botão Para voltar ao topo -->
+    <a href="#logo">
+      <h3>
+        <font color="#3D4547" size="6">
+          <center>Voltar ao topo</center>
+        </font>
+      </h3>
+    </a>
+    <br />
+    <hr color="tomato" width="80%" />
+
+    <!-- Tabela Rodape -->
+    <table cellpadding="10" align="center">
+      <tr>
+        <th>
+          <img src="img/img_cabecalho.png" width="90px" />
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <h4>Petshop da Belinha</h4>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <h5>
+            &#169;Todos os direitos reservados a propriedaria <i>Isabel Oliveira</i>, 31 maio 2021
+          </h5>
+        </th>
+      </tr>
+    </table>
+  </body>
+</html>
