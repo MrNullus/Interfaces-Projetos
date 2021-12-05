@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-36" href="assets/icons/favcon.png">
+		<title>PetShop da Belinha || Serviços</title>
+
+        <!-- link font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<!-- link css file -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+    <body>
+       <!-- header starts -->
+		<header class="header-page">
+			<h1 class="logo"><a href="index.html">PetShop da Belinha</a></h1>
+
+			<!-- navbar starts -->
+			<nav class="navbar" id="myTopnav">
+				<ul>
+					<li>
+						<a href="index.html">Inicio</a>
+					</li>
+					<li>
+						<a href="servicos.html">Serviços</a>
+					</li>
+					<li>
+						<a href="produtos.html">Produtos</a>
+					</li>
+					<li>
+						<a href="contato.html">Contato</a>
+					</li>
+					<li>
+						<a href="cadastro.html">Cadastro</a>
+					</li>
+					<li>
+						<a href="sobre.html">Sobre a empresa</a>
+					</li>
+					<li>
+						<button  class="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+					</li>
+				</ul>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</nav>
+
+			<div id="id01" class="modal">
+  
+				<form class="modal-content animate" action="/action_page.php" method="post">
+				  <div class="imgcontainer">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				  </div>
+			  
+				  <div class="container">
+					<label for="uname"><b>Usuario</b></label>
+					<input type="text" placeholder="Entre com o usuario" name="uname" required>
+			  
+					<label for="psw"><b>Senha</b></label>
+					<input type="password" placeholder="Entre com a senha" name="psw" required>
+					  
+					<button type="submit" class="btn-login">Login</button>
+					<label>
+					  <input type="checkbox" checked="checked" name="remember"> Lembrar de mim
+					</label>
+				  </div>	
+			  
+				  <div class="container" style="background-color:#f1f1f1">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+					<span class="psw">Esqueceu a  <a href="#">senha?</a></span>
+				  </div>
+				</form>
+			  </div>
+			<!-- navbar ends -->
+		</header>
+		<!-- header ends -->
+
+        <!-- page starts -->
+        <main class="page">
+            <!-- services main starts -->
+            <section class="services-main">
+                <header>
+                    <h2 class="heading heading-bg-none">Serviços</h2>
+                    <p class="sub-heading">
+                        Veja nossos serviços, feitos para seu pet. Um amigo bem cuidado é um pet amado!
+                    </p>
+
+                    <!-- nav services -->
+                    <nav class="nav-services">
+                        <a href="#banho">Banho</a>
+                        <a href="#tosas">Tosa</a>
+                        <a href="#taxi-dog">Taxi Dog</a>
+                        <a href="#hotel-pet">Hotel Pet</a>
+                        <a href="#adestra">Adestramento</a>
+                        <a href="#passeio">Passeio</a>
+                    </nav>
+                </header>
+
+                <!-- hero -->
+                <div class="hero-container">
+                    <div class="hero">
+                        <h3>Todos os serviços são feitos com excelencia!</h3>
+                    </div>
+                </div>
+
+                <!-- box services starts -->
+                <div class="box-services">
+
+                    <!-- single service -->
+                    <div class="box-service" id="banho">
+                        <div class="service-image">
+                            <img src="assets/servicos/banho.png" alt="Icone Banho">
+                        </div>
+                        <h3 class="box-service-title">Banho</h3>
+                        <p class="box-service-details">
+                            Para garantir um banho gostoso e seguro para seu pet, contamos com duchas aquecidas e banheiras amplas, com piso anti-derrapante. O banho inclui limpeza de o   uvidos e corte de unhas, e você pode acompanhar todo o processo através da janela de vidro.
+                        </p>
+                        <div>
+                            <a href="https://www.instagram.com" class="btn btn-service">
+                                Obter Serviço! <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- single service -->
+                    <div class="box-service" id="tosas">
+                        <div class="service-image">
+                            <img src="assets/servicos/tosas.png" alt="Icone Tosa">
+                        </div>
+                        <h3 class="box-service-title">Tosas</h3>
+                        <p class="box-service-details">
+                            Realizamos tosa geral na máquina, da raça, bebê, na tesoura, de acordo com as preferências de cada cliente, sempre levando em consideração a melhor opção para cada animal.
+                        </p>
+                         <div>
+                           <a href="https://www.instagram.com" class="btn btn-service">
+                                Obter Serviço! <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- single service -->
+                    <div class="box-service" id="taxi-dog">
+                        <div class="service-image">
+                            <img src="assets/servicos/taxi_dog.png" alt="Icone Taxi Dog">
+                        </div>
+                        <h3 class="box-service-title">Taxi Dog</h3>
+                        <p class="box-service-details">
+                            Com o Taxi Dog, o seu cão tera um taxi exclussivo com muito conforto e qualidade
+                        </p>
+                         <div>
+                           <a href="https://www.instagram.com" class="btn btn-service">
+                                Obter Serviço! <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- single service -->
+                    <div class="box-service" id="hotel-pet">
+                        <div class="service-image">
+                            <img src="assets/servicos/hotel-pet.png" alt="Icone Hotel Pet">
+                        </div>
+                        <h3 class="box-service-title">Hotel Pet</h3>
+                        <p class="box-service-details">
+                           Temos o melhor Hotel para seu, cachorro, gato, e etc. Terem a melhor conforto e moradia
+                        </p>
+                         <div>
+                           <a href="https://www.instagram.com" class="btn btn-service">
+                                Obter Serviço! <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>  
+
+                    <!-- single service -->
+                    <div class="box-service" id="adestra">
+                        <div class="service-image">
+                            <img src="assets/servicos/adestra.png" alt="Icone Adestramento">
+                        </div>
+                        <h3 class="box-service-title">Adestramento</h3>
+                        <p class="box-service-details">
+                            Vamos adestrar seu pet para que ele possa conviver bem com você.
+                        </p>
+                         <div>
+                           <a href="https://www.instagram.com" class="btn btn-service">
+                                Obter Serviço! <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- single service -->
+                    <div class="box-service" id="passeio">
+                        <div class="service-image">
+                            <img src="assets/servicos/passeio.png" alt="Icone Passeio">
+                        </div>
+                        <h3 class="box-service-title">Passeio</h3>
+                        <p class="box-service-details">
+                            Aqui passeamos com o seu pet para gastar energia dele e obter uma saude melhor
+                        </p>
+                         <div>
+                           <a href="https://www.instagram.com" class="btn btn-service">
+                                Obter Serviço! <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- container services ends -->
+            </section>
+            <!-- services main ends -->
+
+        </main>
+        <!-- page ends -->
+
+        <!-- footer page starts -->
+		<footer class="footer-page">
+			<div class="footer-logo">
+				<h5>PetShop Da Belinha</h5>
+			</div>
+
+			<div class="social-media">
+				<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+				<a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+				<a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+			</div>
+			<br>
+			<div class="logo-footer">
+				<img src="assets/logo1.png" alt="">
+			</div>
+
+			<address>
+				&copy; Todos os direitos reservados a propriedaria, Isabel Oliveira, 22 Novembro 2021
+			</address>
+		</footer>
+		<!-- footer page ends -->
+
+		<!-- file js -->
+		<script src="js/js.js"></script>
+    </body>
+</html>
