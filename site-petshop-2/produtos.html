@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-36" href="assets/icons/favcon.png">
+        <title>PetShop da Belinha || Produtos para seu Pet</title>
+
+        <!-- link font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+            integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- link css file -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <!-- header starts -->
+		<header class="header-page">
+			<h1 class="logo"><a href="index.html">PetShop da Belinha</a></h1>
+
+			<!-- navbar starts -->
+			<nav class="navbar" id="myTopnav">
+				<ul>
+					<li>
+						<a href="index.html">Inicio</a>
+					</li>
+					<li>
+						<a href="servicos.html">Serviços</a>
+					</li>
+					<li>
+						<a href="produtos.html">Produtos</a>
+					</li>
+					<li>
+						<a href="contato.html">Contato</a>
+					</li>
+					<li>
+						<a href="cadastro.html">Cadastro</a>
+					</li>
+					<li>
+						<a href="sobre.html">Sobre a empresa</a>
+					</li>
+					<li>
+						<button  class="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+					</li>
+				</ul>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</nav>
+            <!-- navbar ends -->
+
+			<div id="id01" class="modal">
+  
+				<form class="modal-content animate" action="/action_page.php" method="post">
+				  <div class="imgcontainer">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				  </div>
+			  
+				  <div class="container">
+					<label for="uname"><b>Usuario</b></label>
+					<input type="text" placeholder="Entre com o usuario" name="uname" required>
+			  
+					<label for="psw"><b>Senha</b></label>
+					<input type="password" placeholder="Entre com a senha" name="psw" required>
+					  
+					<button type="submit" class="btn-login">Login</button>
+					<label>
+					  <input type="checkbox" checked="checked" name="remember"> Lembrar de mim
+					</label>
+				  </div>	
+			  
+				  <div class="container" style="background-color:#f1f1f1">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+					<span class="psw">Esqueceu a  <a href="#">senha?</a></span>
+				  </div>
+				</form>
+			</div>
+		</header>
+		<!-- header ends -->
+
+        <!-- page starts -->
+        <main class="page">
+            <section class="shop">
+                <header>
+                    <h2 class="heading heading-bg-none">Produtos</h2>
+                    <p class="sub-heading">
+                        Os melhores produtos com o menor preço estão aqui!
+                    </p>
+
+                    <nav class="nav nav-products dropdown">
+                        <ul>
+                            <li>
+                                <a href="catalogo/cats/cats.html">Gatos</a>
+                                <ul>
+                                    <li>
+                                        <a href="catalogo/cats/brinquedos.html">Brinquedos</a>
+                                    </li>
+                                    <li>
+                                        <a href="catalogo/cats/casinhas.html">Casinhas</a>
+                                    </li>
+                                    <li>
+                                        <a href="catalogo/cats/coleiras.html">Coleiras</a>
+                                    </li>
+                                    <li>
+                                        <a href="catalogo/cats/petiscos.html">Petiscos</a>
+                                    </li>
+                                    <li>
+                                        <a href="catalogo/cats/racao.html">Ração</a>
+                                    </li>
+                                    <li>
+                                        <a href="catalogo/cats/caixa_de_areia.html">Areia - Caixa de Areia</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="catalogo/dogs/dogs.html">Cachorros</a>
+                                <ul>
+                                    <li>
+                                        <a href="catalogo/dogs/brinquedos.html">Brinquedos</a>
+                                    </li>
+                                    <li>
+                                        <a href="catalogo/dogs/casinhas.html">Casinhas</a>
+                                    </li>
+                                    <li>
+                                        <a href="catalogo/dogs/coleiras.html">Coleiras</a>
+                                    </li>
+                                    <li>
+                                        <a href="catalogo/dogs/dogs/petiscos.html">Petiscos</a>
+                                    </li>
+                                    <li>
+                                        <a href="catalogo/dogs/racao.html">Ração</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="catalogo/medics/medic-products.html">Remedios</a>
+                                <ul>
+                                    <li>
+                                        <a href="catalogo/medics/dogs.html">Cachorros</a>
+                                    </li>
+                                    <li>
+                                        <a href="catalogo/medics/cats.html">Gatos</a>
+                                    </li>
+                                    <li>
+                                        <a href="catalogo/medics/outers.html">Outros Pets</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="catalogo/outers/outers_pets.html">Outros pets</a>
+                                <ul>
+                                    <li>
+                                        <a href="catalogo/outers/passaros.html">Passaros</a>
+                                    </li>
+                                    <li>
+                                        <a href="catalogo/outers/peixes.html">Peixes</a>
+                                    </li>
+                                    <li>
+                                        <a href="catalogo/outers/roedores.html">Roedores</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="catalogo/ambients/ambients.html">Ambiente e Comportamento</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <!-- dog products starts -->
+                <section class="container">
+                    <header>
+                        <h2 class="heading">Produtos de qualidade e promoção para o seu cão!</h2>
+                    </header>
+
+                    <!-- shop items starts -->
+                    <div class="shop-items">
+                        <div class="pic">
+                            <img src="assets/pics/cachorro-banho.png" alt="Pic Chamativa">
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Petisco Dreamies Carne 40g</h4>
+                            <img src="assets/produtos/dogs/petiscos/Petisco_Dreamies_Carne-40g.jpg" alt="Imagem do produto"
+                                class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Dreamies
+                                </span>
+                                <span class="shop-item-price">R$14,99</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Brinquedo Sonoro The Pets Brasil Frango Gritador</h4>
+                            <img src="assets/produtos/dogs/brinquedos/Brinquedo_Sonoro_The_Pets_Brasil.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    The Pets Brasil
+                                </span>
+                                <span class="shop-item-price">R$8,91</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Coleira Future Pet Nasa</h4>
+                            <img src="assets/produtos/dogs/coleiras/Coleira _Future_Pet_Nas_ Branca.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Furacão Pet
+                                </span>
+                                <span class="shop-item-price">R$34,99</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Casa Furacão Pet de Plástico - Preto</h4>
+                            <img src="assets/produtos/dogs/casinhas/Casa_ Furacão_Pet_Plástico - Preto.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Furacão Pet
+                                </span>
+                                <span class="shop-item-price">R$56,54</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Casa Pet Injet Plástica - Azul</h4>
+                            <img src="assets/produtos/dogs/casinhas/Casa_Pet_Injet_Plástica - Azul.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Furacão Pet
+                                </span>
+                                <span class="shop-item-price">R$46,54</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Bifinho Kelco Keldog Criadores Carne e Cereais Raças Pequenas</h4>
+                            <img src="assets/produtos/dogs/petiscos/Bifinho_Kelco_Keldog_Criadores_Carne_e_Cereais_Raças_Pequenas.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Keldog
+                                </span>
+                                <span class="shop-item-price">R$26,54</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <a class="btn btn-more-product" href="catalogo/dogs/dogs.html">
+                            Quero mais!
+                        </a>
+                    </div>
+                    <!-- shop items ends -->
+                </section>
+                <!-- dog products ends -->
+
+                <!-- cat products starts -->
+                <section class="container">
+                    <header>
+                        <h2 class="heading">Faça seu gato feliz e saudavel com o melhor de nossos produtos e que ainda cabe
+                            no seu bolso!</h2>
+                    </header>
+                    <!-- shop items starts -->
+                    <div class="shop-items">
+                        <div class="pic">
+                            <img src="assets/pics/gato-banho.png" alt="Pic Chamativa">
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Areia Sanitária Cat´s Best Oko Plus</h4>
+                            <img src="assets/produtos/cats/areia-areia_caixa/Areia_Sanitária_Cat´s_Best_Oko_Plus.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Oko Plus
+                                </span>
+                                <span class="shop-item-price">R$29,99</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Brinquedo Arranhador Pet Rampa</h4>
+                            <img src="assets/produtos/cats/brinquedos/arranhador.jpg" alt="Imagem do produto"
+                                class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Furacão Pet
+                                </span>
+                                <span class="shop-item-price">R$58,49</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Ração Golden Gatos Adultos Castrados Frango 1kg</h4>
+                            <img src="assets/produtos/cats/racao/Ração_Golden_Gatos_Adultos_Castrados_Frango_1kg.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Golden
+                                </span>
+                                <span class="shop-item-price">R$39,99</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Ração Nutrilus Pro Gato</h4>
+                            <img src="assets/produtos/cats/racao/Ração_Nutrilus_Pro_Gato.jpg" alt="Imagem do produto"
+                                class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Three Cats
+                                </span>
+                                <span class="shop-item-price">R$24,99</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Granulado Higiênico de Madeira Natural Dilicat</h4>
+                            <img src="assets/produtos/cats/areia-areia_caixa/Granulado_Higiênico_de_Madeira_Natural_CAT_1.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Dilicat
+                                </span>
+                                <span class="shop-item-price">R$24,99</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Whiskas Petisco Temptations Salmão</h4>
+                            <img src="assets/produtos/cats/petiscos/Whiskas_Petisco_Temptations_Salmão.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Whiskas
+                                </span>
+                                <span class="shop-item-price">R$26,99</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <a class="btn btn-more-product" href="catalogo/dogs/dogs.html">
+                            Quero mais!
+                        </a>
+                    </div>
+                    <!-- shop items ends -->
+                </section>
+                <!-- cat products ends -->
+
+                <!-- friday pet -->
+                <section class="friday-pet">
+                    <header>
+                        <h2 class="heading">Veja os produtos que estão na Friday Pet para seu pet!</h2>
+                    </header>
+
+                    <!-- shop items starts -->
+                    <div class="shop-items">
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Brinquedo Arranhador Pet Rampa</h4>
+                            <img src="assets/produtos/cats/brinquedos/arranhador.jpg" alt="Imagem do produto"
+                                class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Furacão Pet
+                                </span>
+                                <span class="shop-item-price">
+                                    R$38,34
+                                </span>
+                                <a class="btn shop-item-button" href="https://www.instagram.com">Pedir</a>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Casa Furacão Pet Platico - Vermelha</h4>
+                            <img src="assets/produtos/dogs/casinhas/Casa_Furacão_Pet_Plástico-Vermelho.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Furacão Pet
+                                </span>
+                                <span class="shop-item-price">
+                                    R$55,99
+                                </span>
+                                <a class="btn shop-item-button" href="https://www.instagram.com">Pedir</a>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Areia Higiênica Chalesco com Cristais de Sílica para Gatos - 1,8kg
+                            </h4>
+                            <img src="assets/produtos/cats/areia-areia_caixa/Granulado_Higiênico_de_Madeira_Natural_CAT_2.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Chalesco
+                                </span>
+                                <span class="shop-item-price">
+                                    R$36,99
+                                </span>
+                                <a class="btn shop-item-button" href="https://www.instagram.com">Pedir</a>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Ração GoldeN  Gatos Adultos Castrados Frango 1kg</h4>
+                            <img src="assets/produtos/cats/racao/Ração_Golden_Gatos_Adultos_Castrados_Frango_1kg.jpg" alt="Imagem do produto"
+                                class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    PremieR
+                                </span>
+                                <span class="shop-item-price">R$139,41</span>
+                                <a class="btn shop-item-button" href="https://www.instagram.com">Pedir</a>
+                            </div>
+                        </div>
+
+                        <a class="btn btn-more-product" href="catalogo/dogs/dogs.html">
+                            Quero mais!
+                        </a>
+                    </div>
+                </section>
+
+                <!-- other products starts -->
+                <section class="">
+                    <header>
+                        <h2 class="heading">Confira nossos diversos produtos para seu Pet!</h2>
+                    </header>
+
+                    <!-- shop items starts -->
+                    <div class="shop-items">
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Banheira Plástica Still Pet Oval para Pássaro Tam GG</h4>
+                            <img src="assets/produtos/outers/passaros/acessorios/Banheira_Plástica_Still_Pet_Oval_para_Pássaros_-_Tam._GG.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Oko Plus
+                                </span>
+                                <span class="shop-item-price">R$33,99</span>
+                                <a class="btn shop-item-button" href="https://www.instagram.com">Pedir</a>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Bedouro Remedio Passaro</h4>
+                            <img src="assets/produtos/medics/outers/Bedouro_Remdio_Passaro.jpg" alt="Imagem do produto"
+                                class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Furacão Pet
+                                </span>
+                                <span class="shop-item-price">R$13,99</span>
+                                <a class="btn shop-item-button" href="https://www.instagram.com">Pedir</a>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Aromatizador Ambiente Capim Limão</h4>
+                            <img src="assets/produtos/comport-ambient/Aromatizador_Ambiente_Capim_Limao.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Three Cats
+                                </span>
+                                <span class="shop-item-price">R$9.99</span>
+                                <a class="btn shop-item-button" href="https://www.instagram.com">Pedir</a>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">American Pets Brinquedo Labirinto Safari</h4>
+                            <img src="assets/produtos/outers/roedores/gaiolas-acessorios/AmericanPets_Brinquedo_Labirinto__Safari.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    American Pets
+                                </span>
+                                <span class="shop-item-price">R$19.99</span>
+                                <a class="btn shop-item-button" href="https://www.instagram.com">Pedir</a>
+                            </div>
+                        </div>
+
+                        <a class="btn btn-more-product" href="catalogo/dogs/dogs.html">
+                            Quero mais!
+                        </a>
+                    </div>
+                    <!-- shop items ends -->
+                </section>
+                <!-- other products ends -->
+            </section>
+        </main>
+        <!-- page ends -->
+
+        <!-- footer page starts -->
+        <footer class="footer-page">
+            <div class="footer-logo">
+                <h5>PetShop Da Belinha</h5>
+            </div>
+
+            <div class="social-media">
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <br>
+            <div class="logo-footer">
+                <img src="assets/logo1.png" alt="">
+            </div>
+
+            <address>
+                &copy; Todos os direitos reservados a propriedaria, Isabel Oliveira, 22 Novembro 2021
+            </address>
+        </footer>
+        <!-- footer page ends -->
+
+        <!-- file js -->
+        <script src="js/js.js"></script>
+    </body>
+</html>
