@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-36" href="../../assets/icons/favcon.png">
+        <title>PetShop da Belinha || Produtos para seu Gato</title>
+
+        <!-- link font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+            integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- link css file -->
+        <link rel="stylesheet" href="../../css/style.css">
+    </head>
+
+    <body>
+        <!-- header starts -->
+        <header class="header-page">
+            <h1 class="logo"><a href="index.html">PetShop da Belinha</a></h1>
+
+            <!-- navbar starts -->
+            <nav class="navbar" id="myTopnav">
+                <ul>
+                    <li>
+                        <a href="../../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="../../servicos.html">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="../../produtos.html">Produtos</a>
+                    </li>
+                    <li>
+                        <a href="../../contato.html">Contato</a>
+                    </li>
+                    <li>
+                        <a href="../../cadastro.html">Cadastro</a>
+                    </li>
+                    <li>
+                        <a href="../../sobre.html">Sobre a empresa</a>
+                    </li>
+                    <li>
+						<button  class="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+					</li>
+                </ul>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+            <!-- navbar ends -->
+
+            <div id="id01" class="modal">
+				<form class="modal-content animate" action="/action_page.php" method="post">
+				  <div class="imgcontainer">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				  </div>
+			  
+				  <div class="container">
+					<label for="uname"><b>Usuario</b></label>
+					<input type="text" placeholder="Entre com o usuario" name="uname" required>
+			  
+					<label for="psw"><b>Senha</b></label>
+					<input type="password" placeholder="Entre com a senha" name="psw" required>
+					  
+					<button type="submit" class="btn-login">Login</button>
+					<label>
+					  <input type="checkbox" checked="checked" name="remember"> Lembrar de mim
+					</label>
+				  </div>	
+			  
+				  <div class="container" style="background-color:#f1f1f1">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+					<span class="psw">Esqueceu a  <a href="#">senha?</a></span>
+				  </div>
+				</form>
+			</div>
+        </header>
+        <!-- header ends -->
+
+        <!-- page starts -->
+        <main class="page">
+            <div class="shop">
+                <header>
+                    <h2 class="heading heading-bg-none">Brinquedos para Gatos</h2>
+
+                    <nav class="nav nav-products dropdown">
+                        <ul>
+                            <li>
+                                <a href="cats.html">Gatos</a>
+                                <ul>
+                                    <li>
+                                        <a href="brinquedos.html">Brinquedos</a>
+                                    </li>
+                                    <li>
+                                        <a href="casinhas.html">Casinhas</a>
+                                    </li>
+                                    <li>
+                                        <a href="coleiras.html">Coleiras</a>
+                                    </li>
+                                    <li>
+                                        <a href="petiscos.html">Petiscos</a>
+                                    </li>
+                                    <li>
+                                        <a href="racao.html">Ração</a>
+                                    </li>
+                                    <li>
+                                        <a href="caixa_de_areia.html">Areia - Caixa de Areia</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../dogs/dogs.html">Cachorros</a>
+                                <ul>
+                                    <li>
+                                        <a href="../dogs/brinquedos.html">Brinquedos</a>
+                                    </li>
+                                    <li>
+                                        <a href="../dogs/casinhas.html">Casinhas</a>
+                                    </li>
+                                    <li>
+                                        <a href="../dogs/coleiras.html">Coleiras</a>
+                                    </li>
+                                    <li>
+                                        <a href="../dogs/petiscos.html">Petiscos</a>
+                                    </li>
+                                    <li>
+                                        <a href="../dogs/racao.html">Ração</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../medics/medic-products.html">Remedios</a>
+                                <ul>
+                                    <li>
+                                        <a href="../medics/dogs.html">Cachorros</a>
+                                    </li>
+                                    <li>
+                                        <a href="../medics/cats.html">Gatos</a>
+                                    </li>
+                                    <li>
+                                        <a href="../medics/outers.html">Outros Pets</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../outers/outers_pets.html">Outros pets</a>
+                                <ul>
+                                    <li>
+                                        <a href="../outers/passaros.html">Passaros</a>
+                                    </li>
+                                    <li>
+                                        <a href="../outers/peixes.html">Peixes</a>
+                                    </li>
+                                    <li>
+                                        <a href="../outers/roedores.html">Roedores</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../ambients/ambients.html">Ambiente e Comportamento</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <!-- cat products starts -->
+                <section class="container">
+                    <header>
+                        <h2 class="heading">Faça seu gato feliz e saudavel com o melhor de nossos produtos e que ainda cabe
+                            no seu bolso!</h2>
+                    </header>
+                    <!-- shop items starts -->
+                    <div class="shop-items">
+                        <div class="pic" height="600px">
+                            <img src="../../assets/pics/gato-banho.png" alt="Pic Chamativa" height="600px">
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Brinquedo Arranhador Pet Rampa</h4>
+                            <img src="../../assets/produtos/cats/brinquedos/arranhador.jpg" alt="Imagem do produto"
+                                class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Furacão Pet
+                                </span>
+                                <span class="shop-item-price">R$58,49</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Gatorama - Pet House</h4>
+                            <img src="../../assets/produtos/cats/brinquedos/Gatorama.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Pet House
+                                </span>
+                                <span class="shop-item-price">R$26,99</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Brinquedo Ratinho Real de Corda</h4>
+                            <img src="../../assets/produtos/cats/brinquedos/Brinquedo_The_Pets_Brasil_Ratinho_Real_de_Corda.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    The Pets Brasil
+                                </span>
+                                <span class="shop-item-price">R$16,99</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Brinquedo Cat LCM Fishing - Azul</h4>
+                            <img src="../../assets/produtos/cats/brinquedos/Brinquedo_Cat_LCM_Fishing_-_Azul.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Furacão Pet
+                                </span>
+                                <span class="shop-item-price">R$10,50</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div
+                    </div>
+                    <!-- shop items ends -->
+                </section>
+                <!-- cat products ends -->
+            </div>  
+        </main>
+        <!-- page ends -->
+
+        <!-- footer page starts -->
+        <footer class="footer-page">
+            <div class="footer-logo">
+                <h5>PetShop Da Belinha</h5>
+            </div>
+
+            <div class="social-media">
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <br>
+            <div class="logo-footer">
+                <img src="../../assets/logo1.png" alt="">
+            </div>
+
+            <address>
+                &copy; Todos os direitos reservados a propriedaria, Isabel Oliveira, 22 Novembro 2021
+            </address>
+        </footer>
+        <!-- footer page ends -->
+
+        <!-- file js -->
+        <script src="../../js/js.js"></script>
+    </body>
+</html>
