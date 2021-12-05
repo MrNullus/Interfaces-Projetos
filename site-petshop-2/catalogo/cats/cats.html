@@ -17,7 +17,7 @@
     <body>
         <!-- header starts -->
         <header class="header-page">
-            <h1 class="logo">PetShop da Belinha</h1>
+            <h1 class="logo"><a href="index.html">PetShop da Belinha</a></h1>
 
             <!-- navbar starts -->
             <nav class="navbar" id="myTopnav">
@@ -40,12 +40,41 @@
                     <li>
                         <a href="../../sobre.html">Sobre a empresa</a>
                     </li>
+                    <li>
+						<button  class="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+					</li>
                 </ul>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                 </a>
             </nav>
             <!-- navbar ends -->
+
+            <div id="id01" class="modal">
+				<form class="modal-content animate" action="/action_page.php" method="post">
+				  <div class="imgcontainer">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				  </div>
+			  
+				  <div class="container">
+					<label for="uname"><b>Usuario</b></label>
+					<input type="text" placeholder="Entre com o usuario" name="uname" required>
+			  
+					<label for="psw"><b>Senha</b></label>
+					<input type="password" placeholder="Entre com a senha" name="psw" required>
+					  
+					<button type="submit" class="btn-login">Login</button>
+					<label>
+					  <input type="checkbox" checked="checked" name="remember"> Lembrar de mim
+					</label>
+				  </div>	
+			  
+				  <div class="container" style="background-color:#f1f1f1">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+					<span class="psw">Esqueceu a  <a href="#">senha?</a></span>
+				  </div>
+				</form>
+			</div>
         </header>
         <!-- header ends -->
 
@@ -166,7 +195,7 @@
                                 <span class="shop-item-brand">
                                     Oko Plus
                                 </span>
-                                <span class="shop-item-price">$29,99</span>
+                                <span class="shop-item-price">R$29,99</span>
                                 <button class="btn shop-item-button" type="button">Pedir!</button>
                             </div>
                         </div>
@@ -187,7 +216,7 @@
                                 <span class="shop-item-brand">
                                     Furacão Pet
                                 </span>
-                                <span class="shop-item-price">$58,49</span>
+                                <span class="shop-item-price">R$58,49</span>
                                 <button class="btn shop-item-button" type="button">Pedir!</button>
                             </div>
                         </div>
@@ -208,7 +237,7 @@
                                 <span class="shop-item-brand">
                                     Golden
                                 </span>
-                                <span class="shop-item-price">$39,99</span>
+                                <span class="shop-item-price">R$39,99</span>
                                 <button class="btn shop-item-button" type="button">Pedir!</button>
                             </div>
                         </div>
@@ -229,7 +258,7 @@
                                 <span class="shop-item-brand">
                                     Three Cats
                                 </span>
-                                <span class="shop-item-price">$24,99</span>
+                                <span class="shop-item-price">R$24,99</span>
                                 <button class="btn shop-item-button" type="button">Pedir!</button>
                             </div>
                         </div>
@@ -250,7 +279,7 @@
                                 <span class="shop-item-brand">
                                     Dilicat
                                 </span>
-                                <span class="shop-item-price">$24,99</span>
+                                <span class="shop-item-price">R$24,99</span>
                                 <button class="btn shop-item-button" type="button">Pedir!</button>
                             </div>
                         </div>
@@ -271,7 +300,7 @@
                                 <span class="shop-item-brand">
                                     Whiskas
                                 </span>
-                                <span class="shop-item-price">$26,99</span>
+                                <span class="shop-item-price">R$26,99</span>
                                 <button class="btn shop-item-button" type="button">Pedir!</button>
                             </div>
                         </div>
@@ -292,7 +321,7 @@
                                 <span class="shop-item-brand">
                                     Cat Stick
                                 </span>
-                                <span class="shop-item-price">$6,99</span>
+                                <span class="shop-item-price">R$6,99</span>
                                 <button class="btn shop-item-button" type="button">Pedir!</button>
                             </div>
                         </div>
@@ -313,7 +342,7 @@
                                 <span class="shop-item-brand">
                                     Hello Kitty
                                 </span>
-                                <span class="shop-item-price">$46,99</span>
+                                <span class="shop-item-price">R$46,99</span>
                                 <button class="btn shop-item-button" type="button">Pedir!</button>
                             </div>
                         </div>
@@ -334,7 +363,7 @@
                                 <span class="shop-item-brand">
                                     Whiskas
                                 </span>
-                                <span class="shop-item-price">$48,99</span>
+                                <span class="shop-item-price">R$48,99</span>
                                 <button class="btn shop-item-button" type="button">Pedir!</button>
                             </div>
                         </div>
@@ -355,7 +384,7 @@
                                 <span class="shop-item-brand">
                                     Furacão Pet
                                 </span>
-                                <span class="shop-item-price">$76,99</span>
+                                <span class="shop-item-price">R$76,99</span>
                                 <button class="btn shop-item-button" type="button">Pedir!</button>
                             </div>
                         </div>
@@ -376,7 +405,7 @@
                                 <span class="shop-item-brand">
                                     Furacão Pet
                                 </span>
-                                <span class="shop-item-price">$58,99</span>
+                                <span class="shop-item-price">R$58,99</span>
                                 <button class="btn shop-item-button" type="button">Pedir!</button>
                             </div>
                         </div>
@@ -397,7 +426,7 @@
                                 <span class="shop-item-brand">
                                     Furacão Pet
                                 </span>
-                                <span class="shop-item-price">$66,99</span>
+                                <span class="shop-item-price">R$66,99</span>
                                 <button class="btn shop-item-button" type="button">Pedir!</button>
                             </div>
                         </div>
@@ -418,7 +447,7 @@
                                 <span class="shop-item-brand">
                                     pet Injet
                                 </span>
-                                <span class="shop-item-price">$48,99</span>
+                                <span class="shop-item-price">R$48,99</span>
                                 <button class="btn shop-item-button" type="button">Pedir!</button>
                             </div>
                         </div>
@@ -439,7 +468,7 @@
                                 <span class="shop-item-brand">
                                     Pet House
                                 </span>
-                                <span class="shop-item-price">$26,99</span>
+                                <span class="shop-item-price">R$26,99</span>
                                 <button class="btn shop-item-button" type="button">Pedir!</button>
                             </div>
                         </div>
@@ -460,7 +489,7 @@
                                 <span class="shop-item-brand">
                                     The Pets Brasil
                                 </span>
-                                <span class="shop-item-price">$16,99</span>
+                                <span class="shop-item-price">R$16,99</span>
                                 <button class="btn shop-item-button" type="button">Pedir!</button>
                             </div>
                         </div>
@@ -481,7 +510,7 @@
                                 <span class="shop-item-brand">
                                     Furacão Pet
                                 </span>
-                                <span class="shop-item-price">$10,50</span>
+                                <span class="shop-item-price">R$10,50</span>
                                 <button class="btn shop-item-button" type="button">Pedir!</button>
                             </div>
                         </div>
@@ -502,7 +531,7 @@
                                 <span class="shop-item-brand">
                                     Birbo
                                 </span>
-                                <span class="shop-item-price">$100,50</span>
+                                <span class="shop-item-price">R$100,50</span>
                                 <button class="btn shop-item-button" type="button">Pedir!</button>
                             </div>
                         </div>
@@ -523,7 +552,7 @@
                                 <span class="shop-item-brand">
                                     Fresh Meat
                                 </span>
-                                <span class="shop-item-price">$90,90</span>
+                                <span class="shop-item-price">R$90,90</span>
                                 <button class="btn shop-item-button" type="button">Pedir!</button>
                             </div>
                         </div>
@@ -544,7 +573,7 @@
                                 <span class="shop-item-brand">
                                     Nip
                                 </span>
-                                <span class="shop-item-price">$90,90</span>
+                                <span class="shop-item-price">R$90,90</span>
                                 <button class="btn shop-item-button" type="button">Pedir!</button>
                             </div>
                         </div>
@@ -565,7 +594,7 @@
                                 <span class="shop-item-brand">
                                     Nip
                                 </span>
-                                <span class="shop-item-price">$60,00</span>
+                                <span class="shop-item-price">R$60,00</span>
                                 <button class="btn shop-item-button" type="button">Pedir!</button>
                             </div>
                         </div>
@@ -586,7 +615,7 @@
                                 <span class="shop-item-brand">
                                     Furacão Pet
                                 </span>
-                                <span class="shop-item-price">$34,99</span>
+                                <span class="shop-item-price">R$34,99</span>
                                 <button class="btn shop-item-button" type="button">Pedir!</button>
                             </div>
                         </div>
@@ -607,7 +636,7 @@
                                 <span class="shop-item-brand">
                                     Furacão Pet
                                 </span>
-                                <span class="shop-item-price">$10,90</span>
+                                <span class="shop-item-price">R$10,90</span>
                                 <button class="btn shop-item-button" type="button">Pedir!</button>
                             </div>
                         </div>
@@ -628,7 +657,7 @@
                                 <span class="shop-item-brand">
                                     Future Pet
                                 </span>
-                                <span class="shop-item-price">$14,50</span>
+                                <span class="shop-item-price">R$14,50</span>
                                 <button class="btn shop-item-button" type="button">Pedir!</button>
                             </div>
                         </div>
@@ -649,7 +678,7 @@
                                 <span class="shop-item-brand">
                                     Future Pet
                                 </span>
-                                <span class="shop-item-price">$18,50</span>
+                                <span class="shop-item-price">R$18,50</span>
                                 <button class="btn shop-item-button" type="button">Pedir!</button>
                             </div>
                         </div>
