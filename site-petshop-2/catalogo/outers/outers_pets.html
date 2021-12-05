@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-36" href="../../assets/icons/favcon.png">
+        <title>PetShop da Belinha || Produtos para outros pets</title>
+
+        <!-- link font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+            integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- link css file -->
+        <link rel="stylesheet" href="../../css/style.css">
+    </head>
+
+    <body>
+        <!-- header starts -->
+        <header class="header-page">
+            <h1 class="logo"><a href="index.html">PetShop da Belinha</a></h1>
+
+            <!-- navbar starts -->
+            <nav class="navbar" id="myTopnav">
+                <ul>
+                    <li>
+                        <a href="../../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="../../servicos.html">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="../../produtos.html">Produtos</a>
+                    </li>
+                    <li>
+                        <a href="../../contato.html">Contato</a>
+                    </li>
+                    <li>
+                        <a href="../../cadastro.html">Cadastro</a>
+                    </li>
+                    <li>
+                        <a href="../../sobre.html">Sobre a empresa</a>
+                    </li>
+                    <li>
+						<button  class="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+					</li>
+                </ul>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+            <!-- navbar ends -->
+
+            <div id="id01" class="modal">
+				<form class="modal-content animate" action="/action_page.php" method="post">
+				  <div class="imgcontainer">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				  </div>
+			  
+				  <div class="container">
+					<label for="uname"><b>Usuario</b></label>
+					<input type="text" placeholder="Entre com o usuario" name="uname" required>
+			  
+					<label for="psw"><b>Senha</b></label>
+					<input type="password" placeholder="Entre com a senha" name="psw" required>
+					  
+					<button type="submit" class="btn-login">Login</button>
+					<label>
+					  <input type="checkbox" checked="checked" name="remember"> Lembrar de mim
+					</label>
+				  </div>	
+			  
+				  <div class="container" style="background-color:#f1f1f1">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+					<span class="psw">Esqueceu a  <a href="#">senha?</a></span>
+				  </div>
+				</form>
+			</div>
+        </header>
+        <!-- header ends -->
+
+        <!-- page starts -->
+        <main class="page">
+            <div class="shop">
+                <header>
+                    <h2 class="heading heading-bg-none">Outros Pets</h2>
+                    <p class="sub-heading">
+                        Todos os produtos para outros pets
+                    </p>
+
+                    <nav class="nav nav-products dropdown">
+                        <ul>
+                            <li>
+                                <a href="../cats/cats.html">Gatos</a>
+                                <ul>
+                                    <li>
+                                        <a href="../cats/brinquedos.html">Brinquedos</a>
+                                    </li>
+                                    <li>
+                                        <a href="../cats/casinhas.html">Casinhas</a>
+                                    </li>
+                                    <li>
+                                        <a href="../cats/coleiras.html">Coleiras</a>
+                                    </li>
+                                    <li>
+                                        <a href="../cats/petiscos.html">Petiscos</a>
+                                    </li>
+                                    <li>
+                                        <a href="../cats/racao.html">Ração</a>
+                                    </li>
+                                    <li>
+                                        <a href="../cats/caixa_de_areia.html">Areia - Caixa de Areia</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../dogs/dogs.html">Cachorros</a>
+                                <ul>
+                                    <li>
+                                        <a href="../dogs/brinquedos.html">Brinquedos</a>
+                                    </li>
+                                    <li>
+                                        <a href="../dogs/casinhas.html">Casinhas</a>
+                                    </li>
+                                    <li>
+                                        <a href="../dogs/coleiras.html">Coleiras</a>
+                                    </li>
+                                    <li>
+                                        <a href="../dogs/petiscos.html">Petiscos</a>
+                                    </li>
+                                    <li>
+                                        <a href="../dogs/racao.html">Ração</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../medics/medic-products.html">Remedios</a>
+                                <ul>
+                                    <li>
+                                        <a href="../medics/dogs.html">Cachorros</a>
+                                    </li>
+                                    <li>
+                                        <a href="../medics/cats.html">Gatos</a>
+                                    </li>
+                                    <li>
+                                        <a href="../medics/outers.html">Outros Pets</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="outers_pets.html">Outros pets</a>
+                                <ul>
+                                    <li>
+                                        <a href="passaros.html">Passaros</a>
+                                    </li>
+                                    <li>
+                                        <a href="peixes.html">Peixes</a>
+                                    </li>
+                                    <li>
+                                        <a href="roedores.html">Roedores</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../ambients/ambients.html">Ambiente e Comportamento</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <!-- outers pets products starts -->
+                <section class="container">
+                    <header>
+                        <h2 class="heading">Temos produtos para todos os pets</h2>
+                    </header>
+                    <!-- shop items starts -->
+                    <div class="shop-items">
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Megazoo Extrusada Germinex</h4>
+                            <img src="../../assets/produtos/outers/passaros/racao/Megazoo_Extrusada_Germinex_350g311586.jpg" alt="Imagem do produto"
+                                class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Megazoo
+                                </span>
+                                <span class="shop-item-price">R$35,99</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                         <!-- single shop item -->
+                         <div class="shop-item">
+                            <h4 class="shop-item-title">Alimentador Automatico Soma Food Timer Tool</h4>
+                            <img src="../../assets/produtos/outers/peixes/aquarios-acessorios/Alimentador-Automatico_Soma_Food-Timer-Tool.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Soma
+                                </span>
+                                <span class="shop-item-price">R$68,91</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Banheira Plástica Still Pet Oval Leitosa para Pássaros</h4>
+                            <img src="../../assets/produtos/outers/passaros/acessorios/Banheira_Plástica_Still_Pet_Oval_Leitosa_para_Pássaros.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Still Pet
+                                </span>
+                                <span class="shop-item-price">R$104,99</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Banheira Still Pet para Calopsita</h4>
+                            <img src="../../assets/produtos/outers/passaros/acessorios/Banheira_Still_Pet_para_Calopsita.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Still Pet
+                                </span>
+                                <span class="shop-item-price">R$99,99</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Banheira Still Pet Redonda Cristal para Pássaros</h4>
+                            <img src="../../assets/produtos/outers/passaros/acessorios/Banheira_Still_Pet_Redonda_Cristal_para_Pássaros.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Still Pet
+                                </span>
+                                <span class="shop-item-price">R$106,54</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Granulado Higiênico AVES 5KG</h4>
+                            <img src="../../assets/produtos/outers/passaros/acessorios/Granulado_Higiênico_AVES_2_5KG.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Core Pet
+                                </span>
+                                <span class="shop-item-price">R$36,54</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Megazoo Papa Lóris L18 900g</h4>
+                            <img src="../../assets/produtos/outers/passaros/racao/Megazoo_Papa_Lóris_L18_900g.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Megazoo
+                                </span>
+                                <span class="shop-item-price">R$58,99</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Mistura Balanceada Zootekna de Sementes Papagaio 400g</h4>
+                            <img src="../../assets/produtos/outers/passaros/racao/Mistura_Balanceada_Zootekna_de_Sementes_Papagaio_-_400_g_.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Furacão Pet
+                                </span>
+                                <span class="shop-item-price">R$76,99</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Ração Nutrópica com Fruta e Pimenta para Trinca Ferro</h4>
+                            <img src="../../assets/produtos/outers/passaros/racao/Ração_Nutrópica_com_Frutas_e_Pimenta_para_Trinca-Ferro.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Golden
+                                </span>
+                                <span class="shop-item-price">R$59,50</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Ração Nutrópica com Frutas para Papagaios</h4>
+                            <img src="../../assets/produtos/outers/passaros/racao/Ração_Nutrópica_com_Frutas_para_Papagaios_3109074.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Golden
+                                </span>
+                                <span class="shop-item-price">R$66,99</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+                        
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Pedigree Dentastix para Cães Adultos Raças Pequenas 3 Unidades</h4>
+                            <img src="../../assets/produtos/outers/passaros/racao/Ração_Nutrópica_para_Curió.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Golden
+                                </span>
+                                <span class="shop-item-price">R$76,99</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Ração Zootekna Mistura Balanceada de Sementes para Agapórnis e Calopsiata 500g</h4>
+                            <img src="../../assets/produtos/outers/passaros/racao/Ração_Zootekna_Mistura_Balanceada_de_Sementes_para_Agapórnis_e_Calopsita_-_500_g_3101096.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Zootekna
+                                </span>
+                                <span class="shop-item-price">R$26,99</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Pinça Hopar Curvada Aquarios 27cm</h4>
+                            <img src="../../assets/produtos/outers/peixes/aquarios-acessorios/Pinça_Hopar_Curvada_Aquarios-27cm.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Hopar
+                                </span>
+                                <span class="shop-item-price">R$10,90</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Pinça Sun Sun Plastica Aquarios 50cm</h4>
+                            <img src="../../assets/produtos/outers/peixes/aquarios-acessorios/Pinça_Sun_Sun_Plastica_Aquarios-50cm.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Sun Sun
+                                </span>
+                                <span class="shop-item-price">R$9,41</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Suplemento Base De Fosforo Microbe Lift Aquarios 118ml</h4>
+                            <img src="../../assets/produtos/outers/peixes/aquarios-acessorios/Suplemento-Base_De_Fosforo_Microbe_Lift_Aquarios-118ml.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Microbe Lift
+                                </span>
+                                <span class="shop-item-price">R$25,99</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">limpeza Limpador Magnetico Flutuante Boyu</h4>
+                            <img src="../../assets/produtos/outers/peixes/limpeza/Limpador-Magnetico-Flutuante_Boyu.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Boyu
+                                </span>
+                                <span class="shop-item-price">R$66,50</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Suplemento Prodac Mutaphi D PH+</h4>
+                            <img src="../../assets/produtos/outers/peixes/limpeza/Suplemento_Prodac_Mutaphi_D_(PH_).jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Prodac
+                                </span>
+                                <span class="shop-item-price">R$29,99</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Termometro Boyu Adesivo BT Fita</h4>
+                            <img src="../../assets/produtos/outers/peixes/limpeza/Termometro_Boyu_Adesivo-BT-Fita.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Boyu
+                                </span>
+                                <span class="shop-item-price">R$56,50</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                         <!-- single shop item -->
+                         <div class="shop-item">
+                            <h4 class="shop-item-title">AmericanPets Brinquedo Labirinto Safari</h4>
+                            <img src="../../assets/produtos/outers/roedores/gaiolas-acessorios/AmericanPets_Brinquedo_Labirinto__Safari.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    AmericanPets
+                                </span>
+                                <span class="shop-item-price">R$86,50</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Caixa Trasporte Chalesco Mini uliver Hamster</h4>
+                            <img src="../../assets/produtos/outers/roedores/gaiolas-acessorios/Caixa_Trasporte_Chalesco_Mini-Guliver_Hamster.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Chalesco
+                                </span>
+                                <span class="shop-item-price">R$96,50</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Casinha Ecológica Recriar Pet Natural para Hamster</h4>
+                            <img src="../../assets/produtos/outers/roedores/gaiolas-acessorios/Casinha_Ecológica_Recriar_Pet_Natural_para_Hamster.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Pet Natural
+                                </span>
+                                <span class="shop-item-price">R$136,50</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Gaiola Bragança Tubo Divertido Hamster</h4>
+                            <img src="../../assets/produtos/outers/roedores/gaiolas-acessorios/Gaiola-Bragança-Tubo-Divertido-Hamster.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Tubo Divertido
+                                </span>
+                                <span class="shop-item-price">R$96,50</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Banho a Seco Animalíssimo para Roedores 1Kg</h4>
+                            <img src="../../assets/produtos/outers/roedores/limpeza/Banho_a_Seco_Animalíssimo_para_Roedores_-_1_Kg.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Animalíssimo
+                                </span>
+                                <span class="shop-item-price">R$36,90</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Granulado Higiênico ProGato Roedores</h4>
+                            <img src="../../assets/produtos/outers/roedores/limpeza/Granulado_Higiênico_ProGato_Roedores.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    ProGato
+                                </span>
+                                <span class="shop-item-price">R$66,90</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Granulado Ipet de Madeira para Roedores 5Kg</h4>
+                            <img src="../../assets/produtos/outers/roedores/limpeza/Granulado_Ipet_de_Madeira_para_Roedores_-_1__5_Kg.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Ipet
+                                </span>
+                                <span class="shop-item-price">R$46,90</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Kit Ferplast com Escova Pente e Rasqueadeira para Roedores</h4>
+                            <img src="../../assets/produtos/outers/roedores/limpeza/Kit-Ferplast-com-Escova_-Pente-e-Rasqueadeira-Gro-Conjunto-Grooming-para-Roedores.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Ferplast
+                                </span>
+                                <span class="shop-item-price">R$55,50</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Coelho Filhote Natural 500g</h4>
+                            <img src="../../assets/produtos/outers/roedores/racao/COELHO-FILHOTE-NATURAL-500.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    NuTropica
+                                </span>
+                                <span class="shop-item-price">R$75,50</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                         <!-- single shop item -->
+                         <div class="shop-item">
+                            <h4 class="shop-item-title">Megazoo Extrusada Coelhos Ornamentais Filhotes 500g</h4>
+                            <img src="../../assets/produtos/outers/roedores/racao/Megazoo_Extrusada_Coelhos_Ornamentais_Filhotes_500g.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Megazoo
+                                </span>
+                                <span class="shop-item-price">R$65,99</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Ração NuTrópica Twister 500g</h4>
+                            <img src="../../assets/produtos/outers/roedores/racao/Ração_NuTrópica_Twister_-_500_g.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Megazoo
+                                </span>
+                                <span class="shop-item-price">R$65,99</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Ração Supra Funny Bunny Blend Coelhos e Pequenos Roedores 500g</h4>
+                            <img src="../../assets/produtos/outers/roedores/racao/Ração_Supra_Funny_Bunny_Blend_Coelhos_e_Pequenos_Roedores_-_500_g.jpg"
+                                alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Funny Bunny
+                                </span>
+                                <span class="shop-item-price">R$65,99</span>
+                                <button class="btn shop-item-button" type="button">Pedir!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- shop items ends -->
+                </section>
+                <!-- outers pets products ends -->
+            </div>  
+        </main>
+        <!-- page ends -->
+
+        <!-- footer page starts -->
+        <footer class="footer-page">
+            <div class="footer-logo">
+                <h5>PetShop Da Belinha</h5>
+            </div>
+
+            <div class="social-media">
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <br>
+            <div class="logo-footer">
+                <img src="../../assets/logo1.png" alt="">
+            </div>
+
+            <address>
+                &copy; Todos os direitos reservados a propriedaria, Isabel Oliveira, 22 Novembro 2021
+            </address>
+        </footer>
+        <!-- footer page ends -->
+
+        <!-- file js -->
+        <script src="../../js/js.js"></script>
+    </body>
+</html>
