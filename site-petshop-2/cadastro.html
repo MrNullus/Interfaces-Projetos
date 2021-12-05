@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" type="image/x-36" href="assets/icons/favcon.png">
-		<title>PetShop da Belinha</title>
+		<title>PetShop da Belinha || Cadastro</title>
 
 		<!-- link css file -->
 		<link rel="stylesheet" href="css/style.css">
@@ -14,7 +14,7 @@
 	<body>
 		<!-- header starts -->
 		<header class="header-page">
-			<h1 class="logo">PetShop da Belinha</h1>
+			<h1 class="logo"><a href="index.html">PetShop da Belinha</a></h1>
 
 			<!-- navbar starts -->
 			<nav class="navbar" id="myTopnav">
@@ -38,7 +38,7 @@
 						<a href="sobre.html">Sobre a empresa</a>
 					</li>
 					<li>
-						<button  class="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+						<button class="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 					</li>
 				</ul>
 				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -54,21 +54,21 @@
 				  </div>
 			  
 				  <div class="container">
-					<label for="uname"><b>Username</b></label>
-					<input type="text" placeholder="Enter Username" name="uname" required>
+					<label for="uname"><b>Usuario</b></label>
+					<input type="text" placeholder="Entre com o usuario" name="uname" required>
 			  
-					<label for="psw"><b>Password</b></label>
-					<input type="password" placeholder="Enter Password" name="psw" required>
+					<label for="psw"><b>Senha</b></label>
+					<input type="password" placeholder="Entre com a senha" name="psw" required>
 					  
 					<button type="submit" class="btn-login">Login</button>
 					<label>
-					  <input type="checkbox" checked="checked" name="remember"> Remember me
+					  <input type="checkbox" checked="checked" name="remember"> Lembrar de mim
 					</label>
 				  </div>	
 			  
 				  <div class="container" style="background-color:#f1f1f1">
-					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-					<span class="psw">Forgot <a href="#">password?</a></span>
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+					<span class="psw">Esqueceu a  <a href="#">senha?</a></span>
 				  </div>
 				</form>
 			  </div>
@@ -81,11 +81,16 @@
 			<header>
 				<h2 class="heading heading-bg-none">Cadastro</h2>
 				<p class="sub-heading">
-					Cadastre uma conta ou cadastre seu pet em nossa loja!
+					Cadastre uma conta ou seu pet em nossa loja!
 				</p>
 			</header>
 
             <section class="cadastro">
+				<!-- banner -->
+				<aside class="banner">
+					<img src="assets/animais.png" alt="Banner">
+				</aside>
+
                 <div>
 					<a href="cadastro-pet.html" class="heading cadastro-pet">
 						Cadastrar Pet
@@ -98,6 +103,122 @@
 					</a>
 				</div>
             </section>
+			
+			<!-- friday pet -->
+			<section class="friday-pet">
+				<header>
+					<h2 class="heading">Veja os produtos que estão na Friday Pet para seu pet!</h2>
+				</header>
+
+				<!-- shop items starts -->
+				<div class="shop-items">
+					<!-- single shop item -->
+					<div class="shop-item">
+						<h4 class="shop-item-title">Brinquedo Arranhador Pet Rampa</h4>
+						<img src="assets/produtos/cats/brinquedos/arranhador.jpg" alt="Imagem do produto" class="shop-item-image">
+						<div class="shop-item-details">
+							<div class="shop-item-stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span class="shop-item-brand">
+								Furacão Pet
+							</span>
+							<span class="shop-item-price shop-item-price-deprect">
+								R$89,99
+							</span>
+							<span class="shop-item-price">
+								R$38,34
+							</span>
+							<a class="btn shop-item-button" href="https://www.instagram.com">Pedir</a>
+						</div>
+					</div>
+
+					<!-- single shop item -->
+					<div class="shop-item">
+						<h4 class="shop-item-title">Casa Furacão Pet Platico - Vermelha</h4>
+						<img src="assets/produtos/dogs/casinhas/Casa_Furacão_Pet_Plástico-Vermelho.jpg" alt="Imagem do produto" class="shop-item-image">
+						<div class="shop-item-details">
+							<div class="shop-item-stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span class="shop-item-brand">
+								Furacão Pet
+							</span>
+							<span class="shop-item-price shop-item-price-deprect">
+								RS120,50
+							</span>
+							<span class="shop-item-price">
+								R$55,99
+							</span>
+							<a class="btn shop-item-button" href="https://www.instagram.com">Pedir</a>
+						</div>
+					</div>							
+
+					<!-- single shop item -->
+					<div class="shop-item">
+						<h4 class="shop-item-title">Areia Higiênica Chalesco com Cristais de Sílica para Gatos - 1,8kg</h4>
+						<img src="assets/produtos/cats/areia-areia_caixa/Granulado_Higiênico_de_Madeira_Natural_CAT_2.jpg" alt="Imagem do produto" class="shop-item-image">
+						<div class="shop-item-details">
+							<div class="shop-item-stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span class="shop-item-brand">
+								Chalesco
+							</span>
+							<span class="shop-item-price shop-item-price-deprect">
+								RS50,99
+							</span>
+							<span class="shop-item-price">
+								R$36,99
+							</span>
+							<a class="btn shop-item-button" href="https://www.instagram.com">Pedir</a>
+						</div>
+					</div>
+
+					<!-- single shop item -->
+					<div class="shop-item">
+						<h4 class="shop-item-title">Ração Premier Golden DUO Cães Adultos Salmão com Ervas e Cordeiro e Arroz</h4>
+						<img src="assets/produtos/dogs/racao/racao2.jpg" alt="Imagem do produto" class="shop-item-image">
+						<div class="shop-item-details">
+							<div class="shop-item-stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span class="shop-item-brand">
+								PremieR
+							</span>
+							<span class="shop-item-price shop-item-price-deprect">
+								R$220,50
+							</span>
+							<span class="shop-item-price">
+								R$139,41
+							</span>
+							<a class="btn shop-item-button" href="https://www.instagram.com">Pedir</a>
+						</div>
+					</div>
+
+					<a class="btn btn-more-product" href="catalogo/dogs/dogs.html">
+						Quero mais!
+					</a>
+				</div>
+			</section>
+		</main>
+		<!-- page ends -->
 		</main>
 		<!-- page ends -->
 
@@ -125,6 +246,6 @@
 		<!-- footer page ends -->
 
 		<!-- file js -->
-		<script src="../js/js.js"></script>
+		<script src="js/js.js"></script>
 	</body>
 </html>
