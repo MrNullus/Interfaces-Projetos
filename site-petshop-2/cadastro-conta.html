@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-36" href="assets/icons/favcon.png">
+		<title>PetShop da Belinha || Cadastrar uma conta</title>
+
+		<!-- link css file -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- link font awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+	</head>
+	<body>
+		<!-- header starts -->
+		<header class="header-page">
+			<h1 class="logo"><a href="index.html">PetShop da Belinha</a></h1>
+
+			<!-- navbar starts -->
+			<nav class="navbar" id="myTopnav">
+				<ul>
+					<li>
+						<a href="index.html">Inicio</a>
+					</li>
+					<li>
+						<a href="servicos.html">Serviços</a>
+					</li>
+					<li>
+						<a href="produtos.html">Produtos</a>
+					</li>
+					<li>
+						<a href="contato.html">Contato</a>
+					</li>
+					<li>
+						<a href="cadastro.html">Cadastro</a>
+					</li>
+					<li>
+						<a href="sobre.html">Sobre a empresa</a>
+					</li>
+					<li>
+						<button  class="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+					</li>
+				</ul>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</nav>
+
+			<div id="id01" class="modal">
+  
+				<form class="modal-content animate" action="/action_page.php" method="post">
+				  <div class="imgcontainer">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				  </div>
+			  
+				  <div class="container">
+					<label for="uname"><b>Usuario</b></label>
+					<input type="text" placeholder="Entre com o usuario" name="uname" required>
+			  
+					<label for="psw"><b>Senha</b></label>
+					<input type="password" placeholder="Entre com a senha" name="psw" required>
+					  
+					<button type="submit" class="btn-login">Login</button>
+					<label>
+					  <input type="checkbox" checked="checked" name="remember"> Lembrar de mim
+					</label>
+				  </div>	
+			  
+				  <div class="container" style="background-color:#f1f1f1">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+					<span class="psw">Esqueceu a  <a href="#">senha?</a></span>
+				  </div>
+				</form>
+			  </div>
+			<!-- navbar ends -->
+		</header>
+		<!-- header ends -->
+
+		<!-- page starts -->
+		<main class="page">
+			<header>
+				<h2 class="heading heading-bg-none">
+					Cadastrar Cliente  
+				</h2>
+			</header>
+
+			<form action="" class="cadastro-conta">
+				<div class="row">
+					<h3>Seus dados para cadastro</h3>					
+					<div class="input-fields">
+						<label for="username">Nome do Cliente<input type="text" name="username" id="username" placeholder=""></label>
+					</div>
+
+					<div class="input-fields">
+						<label for="cpf">CPF<input type="text" name="cpf" id="cpf" placeholder="000.000.000-00"></label>
+					</div>
+
+					<div class="input-fields">
+						<label for="idadeUser">Idade<input type="date" name="idadeUser" id="idadeUser"></label>
+					</div>
+
+					<div class="input-fields">
+						<label for="tel">Telefone</label>
+						<input type="tel" name="tel" id="tel" placeholder="DDD (00) 0000-00000">
+					</div>
+
+					<div class="input-fields">
+						<label for="email">Seu melhor email</label>
+						<input type="email" name="email" id="email"\>
+					</div>
+
+					<div class="input-fields">
+						<label for="password">Senha</label>
+						<input type="password" name="password" id="password">
+					</div>
+
+					<div class="input-fields">
+						<div class="checkbox">
+							<input type="checkbox" id="chk1" checked class="checkbox" name="remember">
+							<label for="chk1">
+								Aceitar os termos de permição
+							</label>
+						</div>
+
+						<div class="checkbox" style="margin-top: 28px;">
+							<input type="checkbox" id="chk2" checked name="newslleter">
+							<label for="chk2">
+								<em>Quero receber ofertas, descontos e promoções exclussivas</em>
+							</label>
+						</div>
+					</div>
+
+					<div style="text-align: center; margin-top: 28px;" class="btn-fields">
+						<button type="submit" class="btn-cadastro">Cadastrar Sua Conta!</button>
+						<button type="reset">Limpar</button>
+					</div>
+				</div>
+			</form>
+		</main>
+		<!-- page ends -->
+
+		<!-- footer page starts -->
+		<footer class="footer-page">
+			<div class="footer-logo">
+				<h5>PetShop Da Belinha</h5>
+			</div>
+
+			<div class="social-media">
+				<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+				<a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+				<a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+			</div>
+			<br>
+			<div class="logo-footer">
+				<img src="assets/logo1.png" alt="">
+			</div>
+
+			<address>
+				&copy; Todos os direitos reservados a propriedaria, Isabel Oliveira, 22 Novembro 2021
+			</address>
+		</footer>
+		<!-- footer page ends -->
+
+		<!-- file js -->
+		<script src="js/js.js"></script>
+	</body>
+</html>
