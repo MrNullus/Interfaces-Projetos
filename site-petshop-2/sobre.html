@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-36" href="assets/icons/favcon.png">
+		<title>PetShop da Belinha || Sobre</title>
+
+        <!-- link font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<!-- link css file -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+    <body>
+        <!-- header starts -->
+		<header class="header-page">
+			<h1 class="logo"><a href="index.html">PetShop da Belinha</a></h1>
+
+			<!-- navbar starts -->
+			<nav class="navbar" id="myTopnav">
+				<ul>
+					<li>
+						<a href="index.html">Inicio</a>
+					</li>
+					<li>
+						<a href="servicos.html">Serviços</a>
+					</li>
+					<li>
+						<a href="produtos.html">Produtos</a>
+					</li>
+					<li>
+						<a href="contato.html">Contato</a>
+					</li>
+					<li>
+						<a href="cadastro.html">Cadastro</a>
+					</li>
+					<li>
+						<a href="sobre.html">Sobre a empresa</a>
+					</li>
+					<li>
+						<button  class="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+					</li>
+				</ul>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</nav>
+
+			<div id="id01" class="modal">
+
+				<form class="modal-content animate" action="/action_page.php" method="post">
+				  <div class="imgcontainer">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				  </div>
+			  
+				  <div class="container">
+					<label for="uname"><b>Usuario</b></label>
+					<input type="text" placeholder="Entre com o usuario" name="uname" required>
+			  
+					<label for="psw"><b>Senha</b></label>
+					<input type="password" placeholder="Entre com a senha" name="psw" required>
+					  
+					<button type="submit" class="btn-login">Login</button>
+					<label>
+					  <input type="checkbox" checked="checked" name="remember"> Lembrar de mim
+					</label>
+				  </div>	
+			  
+				  <div class="container" style="background-color:#f1f1f1">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+					<span class="psw">Esqueceu a <a href="#">senha?</a></span>
+				  </div>
+				</form>
+			  </div>
+			<!-- navbar ends -->
+		</header>
+		<!-- header ends -->
+
+        <!-- page starts -->
+        <main class="page">
+            <!-- section about starts -->
+            <section class="about-main">
+                <header>
+                    <h2 class="heading heading-bg-none">Sobre a empresa</h2>
+                    <p class="sub-heading">
+                        Venha conhecer quem somos nós!
+                    </p>
+                </header>
+
+                <article>
+                    <header>
+                        <h3><span>Afinal...</span> quem somos?</h3>
+                    </header>
+                    <img src="assets/logo2.png" alt="Logo">
+                    <p>
+                        <strong>Temos</strong> 15 anos de experiencia no ramo! <br>
+                        Sabemos que cada laço é único. Fonte de alegria, evolução, bem-estar. Temos experiência e oferecemos espaços, produtos e serviços – e tudo mais que for preciso – para que a relação entre pets e suas famílias seja melhor a cada dia. Essa é nossa razão de ser.
+                    </p>
+                    <p>
+                        <strong>Convidamos</strong> você a dar um passeio em nossas lojas, se divertir, trocar ideias, histórias, sentimentos, criar laços, sorrir com a gente. Isso é o que fazemos, e esse é o nosso jeito.
+                    </p>
+
+                    <p>
+                        <strong>Muitas vezes</strong>, sabemos que seu tempo é curto, mas queremos que você aproveite cada segundo que passar conosco! Para isso, a gente trata todos os pets com muita dedicação e respeito e trabalha a todo instante para que nossas lojas, produtos e serviços estejam à altura de tanto amor e cuidado.
+                    </p>
+
+                    <p>
+                        <strong>Nossa Missão:</strong> Criar valor na interação com os apaixonados por animais de estimação, potencializando o bem da relação entre o pet e sua família.
+                    </p>
+                    
+                    <p>
+                        <strong>Nossa Visão:</strong> Ser mundialmente reconhecido como melhor ecossistema do segmento pet até 2025.
+                    </p>
+
+                    <p>
+                        <strong>Nossos Valores:</strong>
+                    </p>
+                    <ol>
+                        <li>Somos <strong>apaixonados</strong> por <strong>pets</strong>;</li>
+                        <li><strong>Respeitamos</strong> uns aos <strong>outros</strong>;</li>
+                        <li><strong>Reconhecemos</strong> esforços, premiamos resultados;</li>
+                        <li><strong>Encantamos</strong> nossos <strong>clientes</strong>;</li>
+                        <li>Temos <strong>prazer em servir</strong>;</li>
+                    </ol>
+                </article>
+
+                <!-- friday pet -->
+                <aside class="friday-pet">
+                    <header>
+                        <h2 class="heading">Veja os produtos que estão na Friday Pet para seu pet!</h2>
+                    </header>
+
+                   <!-- shop items starts -->
+                    <div class="shop-items">
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Brinquedo Arranhador Pet Rampa</h4>
+                            <img src="assets/produtos/cats/brinquedos/arranhador.jpg" alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Furacão Pet
+                                </span>
+                                <span class="shop-item-price shop-item-price-deprect">
+                                    R$89,99
+                                </span>
+                                <span class="shop-item-price">
+                                    R$38,34
+                                </span>
+                                <a class="btn shop-item-button" href="https://www.instagram.com">Pedir</a>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Casa Furacão Pet Platico - Vermelha</h4>
+                            <img src="assets/produtos/dogs/casinhas/Casa_Furacão_Pet_Plástico-Vermelho.jpg" alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Furacão Pet
+                                </span>
+                                <span class="shop-item-price shop-item-price-deprect">
+                                    RS120,50
+                                </span>
+                                <span class="shop-item-price">
+                                    R$55,99
+                                </span>
+                                <a class="btn shop-item-button" href="https://www.instagram.com">Pedir</a>
+                            </div>
+                        </div>							
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Areia Higiênica Chalesco com Cristais de Sílica para Gatos - 1,8kg</h4>
+                            <img src="assets/produtos/cats/areia-areia_caixa/Granulado_Higiênico_de_Madeira_Natural_CAT_2.jpg" alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    Chalesco
+                                </span>
+                                <span class="shop-item-price shop-item-price-deprect">
+                                    RS50,99
+                                </span>
+                                <span class="shop-item-price">
+                                    R$36,99
+                                </span>
+                                <a class="btn shop-item-button" href="https://www.instagram.com">Pedir</a>
+                            </div>
+                        </div>
+
+                        <!-- single shop item -->
+                        <div class="shop-item">
+                            <h4 class="shop-item-title">Ração Premier Golden DUO Cães Adultos Salmão com Ervas e Cordeiro e Arroz</h4>
+                            <img src="assets/produtos/dogs/racao/racao2.jpg" alt="Imagem do produto" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <div class="shop-item-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="shop-item-brand">
+                                    PremieR
+                                </span>
+                                <span class="shop-item-price shop-item-price-deprect">
+                                    R$220,50
+                                </span>
+                                <span class="shop-item-price">
+                                    R$139,41
+                                </span>
+                                <a class="btn shop-item-button" href="https://www.instagram.com">Pedir</a>
+                            </div>
+                        </div>
+
+                        <a class="btn btn-more-product" href="catalogo/dogs/dogs.html">
+                            Quero mais!
+                        </a>
+                    </div>
+                </aside>
+            </section>
+            <!-- section about ends -->
+
+        </main>
+        <!-- page ends -->
+
+        <!-- footer page starts -->
+		<footer class="footer-page">
+			<div class="footer-logo">
+				<h5>PetShop Da Belinha</h5>
+			</div>
+
+			<div class="social-media">
+				<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+				<a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+				<a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+			</div>
+			<br>
+			<div class="logo-footer">
+				<img src="assets/logo1.png" alt="">
+			</div>
+
+			<address>
+				&copy; Todos os direitos reservados a propriedaria, Isabel Oliveira, 22 Novembro 2021
+			</address>
+		</footer>
+		<!-- footer page ends -->
+
+		<!-- file js -->
+		<script src="js/js.js"></script>
+    </body>
+</html>
