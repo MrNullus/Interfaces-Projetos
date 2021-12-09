@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-36" href="assets/icons/favcon.png">
+		<title>PetShop da Belinha</title>
+
+		<!-- link css file -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- link font awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+	</head>
+	<body>
+		<!-- header starts -->
+		<header class="header-page">
+			<h1 class="logo"><a href="index.html">PetShop da Belinha</a></h1>
+
+			<!-- navbar starts -->
+			<nav class="navbar" id="myTopnav">
+				<ul>
+					<li>
+						<a href="index.html">Inicio</a>
+					</li>
+					<li>
+						<a href="servicos.html">Serviços</a>
+					</li>
+					<li>
+						<a href="produtos.html">Produtos</a>
+					</li>
+					<li>
+						<a href="unidades.html">Unidades</a>
+					</li>
+					<li>
+						<a href="contato.html">Contato</a>
+					</li>
+					<li>
+						<a href="cadastro.html">Cadastro</a>
+					</li>
+					<li>
+						<a href="sobre.html">Sobre a empresa</a>
+					</li>
+					<li>
+						<button  class="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+					</li>
+				</ul>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</nav>
+
+			<div id="id01" class="modal">
+  
+				<form class="modal-content animate" action="/action_page.php" method="post">
+				  <div class="imgcontainer">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				  </div>
+			  
+				  <div class="container">
+					<label for="uname"><b>Usuario</b></label>
+					<input type="text" placeholder="Entre com o usuario" name="uname" required>
+			  
+					<label for="psw"><b>Senha</b></label>
+					<input type="password" placeholder="Entre com a senha" name="psw" required>
+					  
+					<button type="submit" class="btn-login">Login</button>
+					<label>
+					  <input type="checkbox" checked="checked" name="remember"> Lembrar de mim
+					</label>
+				  </div>	
+			  
+				  <div class="container" style="background-color:#f1f1f1">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+					<span class="psw">Esqueceu a  <a href="#">senha?</a></span>
+				  </div>
+				</form>
+			  </div>
+			<!-- navbar ends -->
+		</header>
+		<!-- header ends -->
+
+		<!-- page starts -->
+		<main class="page">
+			<header>
+				<h2 class="heading heading-bg-none">Unidades</h1>
+				<p class="sub-heading">
+					Veja a nossa unidade mais próxima de você, estamos esperando por você e seu pet!
+				</p>
+			</header>
+			<section class="drives-container">
+				<div class="drive">
+					<div class="drive-img drive-img1"></div>
+					<h4 class="drive-title">
+						Unidade de Francisco Morato
+					</h4>
+					<div class="drive-content">
+						<div class="drive-info">
+							<h5>Horário de funcionamento:</h5>
+							<p>
+								Segunda a domingo - das 09:00 ás 22:00; Feriado - loja fechada;
+							</p>
+						</div>
+						<div class="drive-ender">
+							<h5>
+								Endereço:
+							</h5>
+							<p>
+								Av. São Miguel, 7988
+								Vila George, Centro - São Paulo/SP
+								CEP: 08070-001
+							</p>
+						</div>
+						<div class="drive-tel">
+							<h5>Telefone:</h5>
+							<p>(11) 98905-9173</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="drive">
+					<div class="drive-img drive-img2"></div>
+					<h4 class="drive-title">
+						Unidade de Franco da Rocha:
+					</h4>
+					<div class="drive-content">
+						<div class="drive-info">
+							<h5>Horário de funcionamento:</h5>
+							<p>
+								Segunda a domingo - das 10:00 ás 23:00; Feriado - loja fechada;
+							</p>
+						</div>
+						<div class="drive-ender">
+							<h5>
+								Endereço:
+							</h5>
+							<p>
+								Av. São Juliana, 7988
+								Vila João - São Paulo/SP
+								CEP: 09870-003
+							</p>
+						</div>
+						<div class="drive-tel">
+							<h5>Telefone:</h5>
+							<p>(11) 98905-9173</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="drive">
+					<div class="drive-img drive-img3"></div>
+					<h4 class="drive-title">
+						Unidade de Jundiaí:
+					</h4>
+					<div class="drive-content">
+						<div class="drive-info">
+							<h5>Horário de funcionamento:</h5>
+							<p>
+								Segunda a domingo - das 09:00 ás 22:00; Feriado - loja fechada;
+							</p>
+						</div>
+						<div class="drive-ender">
+							<h5>
+								Endereço:
+							</h5>
+							<p>
+								Rua Genilson, 88
+								Vila Joana - São Paulo/SP
+								CEP: 08670-092
+							</p>
+						</div>
+						<div class="drive-tel">
+							<h5>Telefone:</h5>
+							<p>(11) 87782-9173</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="drive">
+					<div class="drive-img drive-img4"></div>
+					<h4 class="drive-title">
+						Unidade de Maripora:
+					</h4>
+					<div class="drive-content">
+						<div class="drive-info">
+							<h5>Horário de funcionamento:</h5>
+							<p>
+								Segunda a domingo - das 10:00 ás 20:00; Feriado - loja aberta;
+							</p>
+						</div>
+						<div class="drive-ender">
+							<h5>
+								Endereço:
+							</h5>
+							<p>
+								Av. São João, 79
+								Maripora - São Paulo/SP
+								CEP: 08070-001
+							</p>
+						</div>
+						<div class="drive-tel">
+							<h5>Telefone:</h5>
+							<p>(11) 98472-9827</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- page ends -->
+
+		<!-- footer page starts -->
+		<footer class="footer-page">
+			<div class="footer-logo">
+				<h5>PetShop Da Belinha</h5>
+			</div>
+
+			<div class="social-media">
+				<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+				<a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+				<a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+			</div>
+			<br>
+			<div class="logo-footer">
+				<img src="assets/logo1.png" alt="">
+			</div>
+
+			<address>
+				&copy; Todos os direitos reservados a propriedaria, Isabel Oliveira, 22 Novembro 2021
+			</address>
+		</footer>
+		<!-- footer page ends -->
+
+		<!-- file js -->
+		<script src="js/js.js"></script>
+	</body>
+</html>
