@@ -637,6 +637,78 @@ form.newsletter input[type="submit"]:hover{
   color: #EB3D71;
 }
 
+
+/*
+====================
+  Drives Container
+====================
+*/
+.drives-container{
+  width: 100%;
+  margin-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.drive{
+  width: 45rem;
+  border: 2px solid #222;
+  border-radius: 12px;
+  padding: 1.2rem;
+  margin: 34px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.drive:hover{
+  box-shadow: -1px -1px rgb(121, 115, 115), 1px 1px rgb(121, 115, 115);
+}
+
+.drive-img{
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+}
+
+.drive-img1{
+  background-image: url('../assets/unidades/unidad-01.jpg');
+}
+.drive-img2{
+  background-image: url('../assets/unidades/unidad-02.jpg');
+}
+.drive-img3{
+  background-image: url('../assets/unidades/unidad-03.jpg');
+}
+.drive-img4{
+  background-image: url('../assets/unidades/unidad-04.jpg');
+}
+
+.drive-content{
+  padding: 1rem;
+}
+
+.drive-title{
+  text-align: center;
+  font-size: 1.6rem;
+  padding-top: 1.4rem;
+  color: #EB3D71;
+}
+
+.drive-content h5{
+  font-size: 1.2rem;
+}
+
+.drive-content p{
+  text-indent: 20px;
+  padding: .9rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #546160;
+}
+
+
 /*
 ==================
   Services Main
@@ -648,6 +720,7 @@ form.newsletter input[type="submit"]:hover{
   font-size: 1.6rem;
   color: #08bb76;
   padding-bottom: 1.9rem;
+
 }
 
 .services-main header .nav-services{
@@ -1055,7 +1128,6 @@ div.pic img{
 }
 
 .cadastro div{
-  /* padding: 6rem; */
   display: inline-block;
   padding: 1rem;  
   margin: .6rem;
